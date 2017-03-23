@@ -44,13 +44,13 @@ What do the following commands do:
 `ls -Glp`  
 
 > >
-`ls`       display directories and files within current working directory
-`ls -a`    include hidden files and folders
-`ls -l`    display long-format listing
-`ls -lh`   display files with human-readable format
-`ls -lah`  display files with human-readable format, including hidden files
-`ls -t`    displays newest files first
-`ls -Glp`  displays colored, long-format files and directories, with "/" marking directories
+* `ls`       display directories and files within current working directory
+* `ls -a`    include hidden files and folders
+* `ls -l`    display long-format listing
+* `ls -lh`   display files with human-readable format
+* `ls -lah`  display files with human-readable format, including hidden files
+* `ls -t`    displays newest files first
+* `ls -Glp`  displays colored, long-format files and directories, with "/" marking directories
 ---
 
 ### Q3.  More List Files in Unix  
