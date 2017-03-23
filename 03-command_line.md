@@ -58,11 +58,11 @@ What do the following commands do:
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > >
-`ls -d`    displays only directories
-`ls -m`    displays the names as a comma-separated list
-`ls -R`    includes subdirectories
-`ls -lS`   sort by file size
-`ls --help`help page
+* `ls -d`    displays only directories
+* `ls -m`    displays the names as a comma-separated list
+* `ls -R`    includes subdirectories
+* `ls -lS`   sort by file size
+* `ls --help`help page
 ---
 
 ### Q4.  Xargs   
