@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm going to experiment with both vim and emacs because they have more power than nano, but I'll try vim first (because I saw somewhere that it is a default editor on many systems).
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I am going to try Spyder first because I heard that it is somewhat similar to RStudio and MATLAB, which I'm familiar with. It has some good features, e.g. open source, debugging, documentation viewer. As of 2017.03.23, I am exploring the shortcuts and customization options. I will use the Python sections of the pre-work as opportunities for learning about Spyder.
 
  
