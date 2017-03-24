@@ -22,11 +22,11 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Sets are like lists in that they contain multiple elements and are mutable, but there are differences as well. These include that each element in a set must be immutable and unique, and a set is unordered.
 
-An example list is ...
+An example list is ['Bob', 'Rachel', 'Bob', 'John'].
 
-An example set is ...
+An example set (corresponding to the list above) is {'Bob', 'Rachel', 'John'}.
 
-Performance comparison ...
+Finding an element in a set is faster than doing so in a list because sets use hash functions to map elements to respective specific "buckets" that can be immediately searched for values. Searching for lists, on the other hand, necesitates testing through every element in the list for equality.
 
 ---
 
