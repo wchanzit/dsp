@@ -87,9 +87,16 @@ def sort_last(tuples):
     
     return tup3
 
+#def sort_last2(tuples):
+    
+#    return sorted(tuples, key = lambda tup: tup[-1])
+
 #print(sort_last([(1, 3), (3, 2), (2, 1)]))
+#print(sort_last2([(1, 3), (3, 2), (2, 1)]))
 #print(sort_last([(2, 3), (1, 2), (3, 1)]))
+#print(sort_last2([(2, 3), (1, 2), (3, 1)]))
 #print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]))
+#print(sort_last2([(1, 7), (1, 3), (3, 4, 5), (2, 2)]))
 
 
 def remove_adjacent(nums):

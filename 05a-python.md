@@ -34,7 +34,7 @@ Finding an element in a set is faster than doing so in a list because sets use h
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` in Python is a keyword for creating small 'anonymous' functions. (The functions are 'anonymous' in that are are not assigned a name in any namespace.) One common use of `lambda` functions in Python is in `map` as the `func` argument. This allows the Python user to apply an anonymous function to every element of a sequence. Another use of the lambda function is in the `key` argument to `sorted` for custom sorting criteria. One could execute `sorted(my_tuple, key = lambda element: element[1])` to sort a list of tuples by their one-eth entries. 
 
 ---
 
@@ -42,8 +42,17 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a tool in Python for creating new lists (or dicts or sets) from other ones with a concise syntax.
 
+For example, the list comprehension `new_nums = [num + 1 for num in nums]` is equivalent to `map(lambda num: num =1, nums)`.
+
+In addition, the list comprehension `[num for num in nums if num > 6]` is equivalent to `filter(lambda num: num > 6, nums)`. 
+
+The capabilities of list comprehensions are similar to those of `map` and `filter` but with more concise syntax. List comprehensions that are equivalent to a combination of `map` and `filter` can even be written in one line of code.
+
+Here is an example of a dictionary comprehension: `{num: -num for num in range(10)}`.
+
+Here is an example of a set comprehension: `{num for num in range(15)}`.
 ---
 
 ### Complete the following problems by editing the files below:
