@@ -15,7 +15,17 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    
+    for word in words:
+        if len(word) >= 2:
+            if word[0] == word[-1]:
+                count += 1
+    return count
+    
+#print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']))
+#print(match_ends(['', 'x', 'xy', 'xyx', 'xx']))
+#print(match_ends(['aaa', 'be', 'abc', 'hello']))
 
 
 def front_x(words):
@@ -32,7 +42,21 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    
+    x_words = []
+    others = []
+    
+    for word in words:
+        if word[0] == 'x':
+            x_words.append(word)
+        else:
+            others.append(word)
+            
+    return sorted(x_words) + sorted(others)
+
+#print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']))
+#print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']))
+#print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']))
 
 
 def sort_last(tuples):
@@ -49,7 +73,23 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    
+    tup2 = []
+    tup3 = []
+    
+    for tup in tuples:
+        tup2.append((tup[-1::-1]))
+        
+    tup2.sort()
+    
+    for tup in tup2:
+        tup3.append((tup[-1::-1]))
+    
+    return tup3
+
+#print(sort_last([(1, 3), (3, 2), (2, 1)]))
+#print(sort_last([(2, 3), (1, 2), (3, 1)]))
+#print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]))
 
 
 def remove_adjacent(nums):
@@ -68,7 +108,23 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    
+    prev = None
+    new_list = []
+    
+    for num in nums:
+        #print(prev, num, num != prev)
+        if num != prev:
+            new_list.append(num)
+        
+        prev = num
+    
+    return new_list
+
+#print(remove_adjacent([1, 2, 2, 3]))
+#print(remove_adjacent([2, 2, 3, 3, 3]))
+#print(remove_adjacent([3, 2, 3, 3, 3]))
+#print(remove_adjacent([]))
 
 
 def linear_merge(list1, list2):
@@ -85,4 +141,13 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    
+    union = list1 + list2
+    union.sort()
+    
+    return union
+    
+
+#print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']))
+#print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']))
+#print(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']))
