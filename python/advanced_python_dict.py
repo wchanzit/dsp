@@ -1,7 +1,11 @@
 import pandas as pd
 
-# Read and format data.
-df = pd.read_csv('faculty.csv')
+import sys
+directory = '/Users/warren/Data_Science/metis/github/prework/dsp/python/'
+sys.path.append(directory)
+
+# Read and format data
+df = pd.read_csv(directory + 'faculty.csv')
 
 df.columns = ['name', 'degree', 'title', 'email']
 
@@ -19,7 +23,7 @@ surnames = df['name'].apply(lambda x: x[(x.rfind(' ')+1):])
 
 faculty_dict = {surname: make_list(surname) for surname in surnames}
 
-list(faculty_dict.keys())[:3]
+list(faculty_dict.items())[:3]
 
 
 # Q7
@@ -35,7 +39,7 @@ def full_name(n):
 professor_dict = {full_name(name): list(df[df['name'] == name][['degree', 'title', 'email']].iloc[0])
 for name in df['name']}
 
-list(professor_dict.keys())[:3]
+list(professor_dict.items())[:3]
 #professor_dict[('Bellamy', 'Scarlett')]
 
 

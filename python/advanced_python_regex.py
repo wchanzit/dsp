@@ -1,8 +1,12 @@
 import numpy as np
 import pandas as pd
 
+import sys
+directory = '/Users/warren/Data_Science/metis/github/prework/dsp/python/'
+sys.path.append(directory)
+
 # Read and format data
-df = pd.read_csv('faculty.csv')
+df = pd.read_csv(directory + 'faculty.csv')
 
 df.columns = ['name', 'degree', 'title', 'email']
 
